@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana De Leon Bonilla's Capstone Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="content">
+    <div class="container" style="max-width: 100%;">
+      <h1>Pick Your Poison</h1>
+
+      <h2>This is the point of no return</h2>
+
+      <div class="archetypes">
+        <button onclick="chooseArchetype('detective')" data-sound="detective">The Detective</button>
+        <button onclick="chooseArchetype('entity')" data-sound="entity">The Entity</button>
+      </div>      
+    </div>
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="assets/audio/eerie-music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button id="unmuteButton">🔊 Press here to start</button>
+
+  <script src="code.js"></script>
+  <script src="music.js"></script>
+
+  <audio id="sound-detective" src="assets/sounds/detective-mystery.mp3" preload="auto"></audio>
+  <audio id="sound-entity" src="assets/sounds/demon-laugh.mp3" preload="auto"></audio>
+
+</body>
+</html>
