@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Detective - Bedroom - Capstone Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div id="content" class="container">
+
+    <img src="../assets/images/Bedroom3.png" alt="Bedroom">
+
+    <p>      
+        The room is large and lofty, befitting someone of royal status. 
+        The windows, long and narrow, provide an undisturbed view of the 
+        countryside that the Desdemona family owned, stretching on for 
+        miles. Comfortless, antique furniture decorates the room. Center 
+        of it all, laying on a bed fit for any king, is Mahlon. Ezra almost 
+        doesn't recognize him. In his every memory, Mahlon is filled with 
+        a vitality that rivalled the sun. A shining light that persisted 
+        in a place determined to snuff it out. Laying there with his hands 
+        folded over his chest, pale and motionless, he seems almost drained 
+        of life. 
+    </p>
+
+    <div class="choices">
+        <button id="nextButton" onclick="nextStep('study')" data-sound="next">► </button>
+    </div>
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="../assets/audio/dramatic-piano-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="unmuteButton">🔊 Press here to start</button>
+
+  <script src="../music.js"></script>
+  <script src="../code.js"></script>
+
+  <audio id="sound-next" src="../assets/sounds/whispering.mp3" preload="auto"></audio>
+
+</body>
+</html>

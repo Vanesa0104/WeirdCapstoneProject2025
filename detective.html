@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Detective — Capstone Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div id="content" class="container">
+    <h2>The Detective.</h2>
+    
+    <p>
+      It’s a gloomy day when Ezra gets the first letter. The clouds 
+      hung oppressively low in the sky. The morning air carried with 
+      it a chill that persisted from the early hours and refused to die.
+
+    <br></br>  
+      
+      It’s from his old friend, Mahlon Desdemona. He hasn’t heard from him 
+      in years. Though once as close as brothers, they drifted apart when 
+      Ezra decided to move west, where the bustle of city life provided him 
+      an escape from the quiet monotony of the countryside.
+
+    <br></br>
+      
+
+      The letter was filled with pleasantries and fond reminiscences but came 
+      attached with a request to visit his family’s estate, for he had a favour 
+      he dared not ask of anyone else. Anyone else and Ezra might’ve tossed the 
+      letter into the fire to use as kindling to stave off the morning chill. 
+      But this was his old friend— the same prideful boy who’d sooner fall off 
+      his horse than ask for a helping hand. 
+    
+      <br></br>
+
+      The first letter alone would have gotten Ezra on an eastbound carriage, 
+      but shortly after the first letter, another two followed in its wake. 
+      The second letter came from the same sender as the first. Only unlike 
+      the elegant calligraphy of the first, it seemed as though Mahlon had 
+      written to him in urgent haste, as though pressed for time. To add to 
+      its strangeness, the letter spoke of how he should disregard his latest 
+      request, that there was no need to make the long journey. Faced with 
+      such contradiction, Ezra paused; long enough that he barely managed to 
+      receive the last letter before departing east. This letter came from 
+      an entirely new sender–a maid by the name of Gabrielle–writing to tell 
+      him that Mahlon had suddenly fallen into a deathlike sleep.
+
+    </p>
+
+    <div class="choices">
+      <button id="nextButton" onclick="nextStep('arrival')" data-sound="next">► </button>
+    </div>
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="../assets/audio/dramatic-piano-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="unmuteButton">🔊 Press here to start</button>
+
+    <script src="../code.js"></script>    
+    <script src="../music.js"></script>
+    
+
+  <audio id="sound-next" src="../assets/sounds/whispering.mp3" preload="auto"></audio>
+
+</body>
+</html>

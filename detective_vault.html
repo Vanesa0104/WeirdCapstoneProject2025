@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Detective - Vault - Capstone Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <div id="content" class="container">
+
+    <p>      
+      …an underground cellar.
+
+      <br></br>
+      
+      Wandering inside, he’s met with a towering, vaulted door, 
+      shrouded in shadows. The Desdemona family crest glares 
+      down from above, a silent judge. The air is still, heavy 
+      with the scent of damp stone and something older. Fouler.
+
+      <br></br>
+      
+      A quick sweep of the room reveals a single table pushed against 
+      the far wall, holding a silver tray and a flickering torch—the 
+      only source of light in the suffocating darkness. Its 
+      flame dances erratically, casting long shadows that writhe across 
+      the floor.
+
+      <br></br>
+
+      A single painting adorns the stone walls of the cellar, staring 
+      at Ezra through the
+
+      <span id="hoverGloom" class="hover-trigger reveal-item">
+        <span id="hoverTrigger" class="hover-trigger reveal-item"> 
+        gloom...</span>
+    </p>
+
+    <p id="hiddenMessage" class="hidden-paragraph">
+      <em>It’s a replica of the cellar, save for a mysterious light source 
+      cast over the crest.</em>
+    </p>
+
+    <div id="revealButtonContainer" style="display: none;">
+        <div class="image-reveal">
+            <button id="puzzleButton">Use the tray and the torch to reflect a light over the crest</button>
+            <img id="hiddenImage" src="../assets/images/vault2.png" alt="Hidden Compartment" style="display: none; margin: 20px auto 0 auto; max-width: 50%;">
+        </div>
+    </div>
+            
+    <div id="postRevealContent" style="display: none;">
+
+
+    <div class="choices">
+      <button id="nextButton" onclick="nextStep('chamber')" data-sound="next" disabled >► </button>
+    </div>
+
+    </div>
+      
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="../assets/audio/dramatic-piano-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="unmuteButton">🔊 Press here to start</button>
+
+    <script src="../music.js"></script>
+    <script src="../code.js"></script>
+
+  <audio id="sound-next" src="../assets/sounds/whispering.mp3" preload="auto"></audio>
+
+</body>
+</html>

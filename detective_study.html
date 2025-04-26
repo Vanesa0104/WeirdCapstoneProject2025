@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Detective - Study - Capstone Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div id="content" class="container">
+
+    <img src="../assets/images/study3.png">
+
+    <p>      
+        Pained to see his friend so frail, Ezra revisits their 
+        old haunts. Meandering over to the study, he rummages 
+        through the desk’s drawers, to their hidden compartment 
+        where they’d left each other secret notes.
+    </p>
+
+    <div class="image-reveal">
+      <button id="revealButton">Open Drawer</button>
+      <img id="hiddenImage" src="../assets/images/hidden-compartment.png" alt="Hidden Compartment" style="display: none; margin: 20px auto 0 auto; max-width: 100%;">
+    </div>
+
+    <div id="postRevealContent" style="display: none;">
+
+        <p>
+        <em>Huh... What's this for?</em>
+        </p>
+
+        <div class="choices">
+            <button id="nextButton" onclick="nextStep('study2')" data-sound="next">► </button>
+        </div>
+    </div>
+
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="../assets/audio/dramatic-piano-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="unmuteButton">🔊 Press here to start</button>
+
+  <script src="../music.js"></script>
+  <script src="../code.js"></script>
+
+  <audio id="sound-next" src="../assets/sounds/whispering.mp3" preload="auto"></audio>
+
+</body>
+</html>

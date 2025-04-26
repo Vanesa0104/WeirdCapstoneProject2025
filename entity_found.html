@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Entity - Part 2 - Capstone Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div id="content" class="container">    
+    <p>
+        
+      Sighing, Theodosia trudges behind Elena, who shoots her 
+      victorious smirk. Typical. Elena gets them lost but hey, at 
+      least she found the mysterious path that’ll lead them to who 
+      knows where in the forest.
+
+      <br></br>
+      
+      Minutes—maybe hours—pass, time Theodosia spends trying to reach 
+      out for help while Elena walks ahead, taking the occasional selfie 
+      or shot of whatever catches her eye. 
+      <br></br>
+
+      “You know,” Theodosia grumbles, “if we don’t find help soon, the 
+      only pictures we’ll have worth a damn are the pictures on the 
+      missing person's board. Actually, at this rate, they might as 
+      well skip straight to our <em>obituaries</em>.”
+
+      <br></br>
+
+      “Relax, would you?” Elena retorts, rolling her eyes, “They’re 
+      probably already looking for us. We just need to find a clearing 
+      and make a camp. We already have everything we need! Just 
+      consider our camping trip a more intimate and authentic 
+      experience in getting to know the local geography!”
+
+      <br></br>
+
+      “I reserve the right to worry when we’re lost in the middle 
+      of the fucking woods”, Theodosia deadpans, refusing to admit 
+      how the words ease some of the tension in her shoulders.  
+
+      <br></br>
+
+      It’s not long before the trees thin slightly, revealing what 
+      looks like an abandoned religious site. In the center of the 
+      rubble stands an old statue, half-consumed by time and vines, 
+      depicting the scene of a man holding a bird, almost as though 
+      <span id="revealTrigger" class="clickable hover-trigger">
+        in a caress
+      </span>.
+
+    </p>
+
+    <img id="hiddenImage" src="../assets/images/prometheseus5.png" alt="Hidden Statue" style="display: none; max-width: 50%; margin-top: 20px;" />
+
+
+    <div class="choices">
+      <button id="nextButton" onclick="nextStep('exploring1')" data-sound="next">► </button>
+    </div>
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="../assets/audio/scary-forest-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="unmuteButton">🔊 Press here to start</button>
+
+    <script src="../music.js"></script>
+    <script src="../code.js"></script>
+    
+
+  <audio id="sound-next" src="../assets/sounds/whispering.mp3" preload="auto"></audio>
+
+</body>
+</html>

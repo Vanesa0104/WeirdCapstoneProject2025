@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Entity - Part 3 - Capstone Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div id="content" class="container">    
+    <p>
+        
+      Elena steps forward, brushing off leaves from the statue. 
+      “This is definitely something,” she murmurs, circling the 
+      statue. “Think it’ll be our ticket out of student debt?”
+
+      <br></br>
+      
+      Theodosia crouches near the base. Symbols—maybe script—are 
+      engraved in the stone, barely visible under the lichen. 
+      “Think anyone knows this is here?”
+
+      <br></br>
+
+      “No way. There’d be signs. Excavation markers. A group of 
+      archaeologists and their underpaid grad students,” Elena 
+      grins, eyes bright. “This, my friend, is something 
+      <em>undocumented</em>. And it’s ours for the taking!”
+
+      <br></br>
+
+      The thrill of discovery tugs at her, overpowering the unease 
+      that lingers just under the surface. They split up, carefully 
+      exploring through the clearing.
+
+      <br></br>
+
+      Wandering through the site, Theodosia stumbles on something 
+      half-buried in the loose soil. It's a small figurine, worn 
+      down and wings chipped, its features eroded by time, but she 
+      thinks—Angel Gabriel?  
+
+      <br></br>
+
+      <em>Guess we weren’t the first to grace this site.</em>
+
+      <br></br>
+
+      She kneels beside it, brushing off dirt with the sleeve of 
+      her jacket. That’s when she sees it, writing on the wall—lines 
+      etched deep, almost desperate, looping into shapes of what she 
+      thinks is some ancient language. Nothing she can read or make 
+      out anyway, it’s all Greek to her.  
+      <span id="revealTrigger" class="clickable hover-trigger">
+        it’s all Greek to her
+      </span>.
+
+    </p>
+
+    <img id="hiddenImage" src="../assets/images/writing_on_the_wall.png" alt="Ancient Writing" style="display: none; max-width: 50%; margin-top: 20px;" />
+
+
+    <div class="choices">
+      <button id="nextButton" onclick="nextStep('exploring2')" data-sound="next">► </button>
+    </div>
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="../assets/audio/mysterious-forest-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="unmuteButton">🔊 Press here to start</button>
+
+    <script src="../music.js"></script>
+    <script src="../code.js"></script>
+    
+
+    <audio id="sound-next" src="../assets/sounds/whispering.mp3" preload="auto"></audio>
+</body>
+</html>

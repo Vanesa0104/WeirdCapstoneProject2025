@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Entity - Part 4 - Capstone Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div id="content" class="container">    
+    <p>
+        
+      Running her hand over the wall, she follows the carvings. 
+      Eventually finding herself staring at what looks like 
+      hieroglyphics, drawings of some scene. A ritual, maybe? 
+
+      <br></br>
+      
+      The scene stirs something deep in her gut. Familiar. But why?
+
+      <br></br>
+
+      It’s Prometheus, she realizes. She’d never been interested 
+      in old mythos, but she’s <em>certain</em> that the scene depicted 
+      the story of Prometheus, the titan punished for giving men 
+      the gift of fire.
+
+      <br></br>
+
+      Theodosia’s skin begins to itch. Her eczema, dormant for weeks, 
+      flares along her forearms. She scratches herself absently, 
+      distracted by a rising noise—the chirping of birds, at first 
+      distant, now swelling into something louder. Too loud. 
+
+      <br></br>
+
+      A symphony of discord. 
+
+      <br></br>
+
+      <span id="chamberTrigger" class="hover-reveal">
+        A warning.
+      </span>
+    </p>
+
+      <div id="chamberButtonContainer" style="display: none; margin-top: 20px;">
+        <button id="chamberButton">🔊</button>
+      </div>
+      
+      <audio id="chamberSound" src="../assets/sounds/scared-bird-sounds.mp3" preload="auto"></audio>
+
+    <div class="choices">
+      <button id="nextButton" onclick="nextStep('memory')" data-sound="next">► </button>
+    </div>
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="../assets/audio/forest-mystical-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="unmuteButton">🔊 Press here to start</button>
+
+    <script src="../code.js"></script>
+    <script src="../music.js"></script>
+    
+
+    <audio id="sound-next" src="../assets/sounds/whispering.mp3" preload="auto"></audio>
+</body>
+</html>

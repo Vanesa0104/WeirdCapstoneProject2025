@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Entity - Part 1 - Capstone Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div id="content" class="container">
+    <h2>The Entity.</h2>
+    
+    <p>
+      “Theodosia, look!”
+
+      <br></br>  
+        
+      Theodosia brushes aside a few low-hanging branches, coming up next 
+      to her friend, Elena. “I found something!” Elena calls over the 
+      sound of rustling leaves and 
+
+      <span id="chamberTrigger" class="hover-reveal">
+        faint bird calls overhead.
+      </span>
+    </p>
+
+      <div id="chamberButtonContainer" style="display: none; margin-top: 20px;">
+        <button id="chamberButton">🔊</button>
+      </div>
+      
+      <audio id="chamberSound" src="../assets/audio/birds-audio.mp3" preload="auto"></audio>
+
+
+    <p>
+      There, shrouded in greenery, a thin path wound through the trees, 
+      leading into what seems to be the thickest part of the forest—so 
+      faint anyone not looking for it would have missed it. 
+
+      <br></br>
+
+      “Should we follow it?” Elena asks, already stepping onto the path.
+
+      <br></br>
+
+      “I don’t know, Elena…” Theodosia says, “Shouldn’t we try to find 
+      a path out of the forest? Not one that heads <em>deeper</em> in?”
+
+      <br></br>
+
+      “Oh, come on!” Elena whines, “It’s not like we can get any more 
+      lost!”
+
+      <br></br>
+
+      <em>Well, she’s not wrong.</em>
+
+    </p>
+
+    <div class="choices">
+      <button id="nextButton" onclick="nextStep('found')" data-sound="next">► </button>
+    </div>
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="../assets/audio/spirits-of-the-moor-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="unmuteButton">🔊 Press here to start</button>
+
+    <script src="../code.js"></script>
+    <script src="../music.js"></script>
+    
+
+  <audio id="sound-next" src="../assets/sounds/whispering.mp3" preload="auto"></audio>
+
+</body>
+</html>

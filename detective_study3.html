@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Detective - Study - Capstone Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <div id="content" class="container">
+
+    <img src="../assets/images/spiraling-stairs2.png">
+
+    <p>      
+        The door creaks open, revealing a spiral of stone stairs, 
+        coiling downwards into a black void of darkness. The stone 
+        walls glisten with moisture, shadows clinging to the walls 
+        as though trying to drag the world into their inky embrace.  
+
+      <br></br>
+      
+      Ezra wouldn’t be much of a detective if he’d left. 
+
+      <br></br>
+      
+      Everything that’s happened thus far is shrouded in mystery. 
+      He takes a breath, squares his shoulders, and begins to 
+      descend—steps swallowed by silence—until he finds...
+
+    </p>
+
+    <div class="choices">
+        <button id="nextButton" onclick="nextStep('vault')" data-sound="next">► </button>
+    </div>
+  </div>
+
+  <audio id="bg-music" muted playsinline autoplay loop>
+    <source src="../assets/audio/dramatic-piano-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="unmuteButton">🔊 Press here to start</button>
+
+    <script src="../music.js"></script>
+    <script src="../code.js"></script>
+
+  <audio id="sound-next" src="../assets/sounds/whispering.mp3" preload="auto"></audio>
+
+</body>
+</html>
